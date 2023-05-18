@@ -8,18 +8,17 @@
     <li><strong>Notess</strong></li>
   </ul>
   <ul>
-  <details role="list">
-  <summary aria-haspopup="listbox" role="button" style="height:35px; width:50%px; padding:5px; margin-top:20px; font-size:.7rem;">
+    <li> <input type="text" id="search" style="height:20px;" placeholder="search"></li>
+    <details role="list">
+  <summary aria-haspopup="listbox" role="button" style="height:40px; margin-top:18px;">
     Quick Search
   </summary>
-  <ul role="listbox" style="font-size:.7rem;">
+  <ul role="listbox">
     <li><a>Action</a></li>
     <li><a>Another action</a></li>
     <li><a>Something else here</a></li>
   </ul>
-</details> 
-<li> <input type="text" id="search" style="height:35px;" placeholder="search"></li>
-
+</details>
   </ul>
 </nav>
 </article>
