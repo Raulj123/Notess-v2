@@ -5,6 +5,7 @@
 <article>
 <nav class="container-fluid">
   <ul>
+      <li><img src="/Notess.gif" alt="logo" style="height:40px;"></li>
     <li><strong>Notess</strong></li>
   </ul>
   <ul>
@@ -23,7 +24,7 @@
   </ul>
 </nav>
 </article>
-
+<slot/>
 <style>
   article{
     padding:0px;
