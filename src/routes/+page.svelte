@@ -1,7 +1,15 @@
+<script lang="ts">
+import Notes from "../notes.svelte"
+function addNote(){
+  console.log("clicked")
+}  
+</script>
+
 <div id="app">
-<button class="add-note" type="button">+</button>
+<button class="add-note" type="button" on:click={()=>addNote()}>+</button>
 </div>
- <style>
+<Notes/>
+<style>
    .add-note{
 	height:200px;
 	

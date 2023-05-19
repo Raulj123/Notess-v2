@@ -8,5 +8,9 @@ declare global {
 		// interface Platform {}
 	}
 }
-
-export {};
+interface Note {
+	title: string;
+	content: string;
+	label: string;
+	date: string;
+}
