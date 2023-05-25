@@ -1,12 +1,16 @@
 <script lang="ts">
   import '@picocss/pico'
+  function goTo(){
+ window.location.href = "./"
+
+  }
 </script>
 
 <article>
 <nav class="container-fluid">
   <ul>
       <li><img src="/Notess.gif" alt="logo" style="height:40px;"></li>
-    <li><strong>Notess</strong></li>
+    <li  on:click={()=>goTo()}><strong>Notess</strong></li>
   </ul>
   <ul>
   <details role="list">

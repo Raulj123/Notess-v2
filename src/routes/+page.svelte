@@ -2,6 +2,7 @@
 import Notes from "../notes.svelte"
 function addNote(){
   console.log("clicked")
+   window.location.href = "./addPage/"
 }  
 </script>
 

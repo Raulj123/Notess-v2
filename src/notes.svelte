@@ -1,23 +1,22 @@
-<script lang ="ts">
-   
-
+<script lang="ts">
+ 
 </script>
   <div class="note-card" on:click >
-    <div class="title">Title</div>
-    <div class="preview">content</div>
+    <div class="title">title</div>
+    <div class="preview">blah</div>
 
   <div class="tag-wrapper">
-    <div class="tag">label</div>
+    <div class="tag">asdasdasd</div>
   </div>
 
   <div class="card-footer">
-    <div class="date">date</div>
+    <div class="date">asdasd</div>
   </div>
 </div>
 
 <style>
 .note-card{
-    width: 150px;
+    width: 200px;
     height: 200px;
     margin-right: 15px;
     background-color: #fff;
@@ -42,6 +41,7 @@
       font-size: 12px;
       margin-right: 5px;
       height: 15px;
+      width: 100px;
       &-wrapper {
         display: flex;
         align-items: flex-end;
