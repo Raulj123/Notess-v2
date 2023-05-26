@@ -1,7 +1,7 @@
 
 
 <h2 style="text-align:center; font-weight:bold; margin-bottom:0px; margin-top:20px;">Add your note!</h2>
-<form >
+<form method="POST">
   <div class="wrapper">
     <div class="grid">
  <label for ="title">
