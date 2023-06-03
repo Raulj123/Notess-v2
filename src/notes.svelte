@@ -1,19 +1,24 @@
 <script lang="ts">
- 
+ import type {PageData} from './$types'
+export let data: PageData
+$: ({notes} = data)
+
 </script>
+
   <div class="note-card" on:click >
-    <div class="title">title</div>
-    <div class="preview">blah</div>
+    <div class="title">note.title</div>
+    <div class="preview">note.content</div>
 
   <div class="tag-wrapper">
-    <div class="tag">asdasdasd</div>
+    <div class="tag">ote.label</div>
   </div>
 
   <div class="card-footer">
-    <div class="date">asdasd</div>
+    <div class="date">note.date</div>
+   
   </div>
 </div>
-
+ 
 <style>
 .note-card{
     width: 200px;
