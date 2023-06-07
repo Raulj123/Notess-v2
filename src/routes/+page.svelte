@@ -10,8 +10,7 @@
 	} 
 	</script>
 	
-	
-	
+<div class="container">	
 	<div id="app">
 	<button class="add-note" type="button" on:click={()=>addNote()}>+</button>
 	</div>
@@ -25,11 +24,13 @@
 	  </div>
 	
 	  <div class="card-footer">
-		<div class="date">{note.date}</div> 
+		<div class="date">{note.date}</div>
+    <div class="edit">Edit</div>
+    <div class="Trash">Trash</div>
 	  </div>
-	</div>
+</div>
 	{/each}
-	
+	</div>
 	<style>
 	.note-card{
 		width: 200px;
@@ -82,7 +83,15 @@
 	gap:20px;
 	
 	}
-	
+  .add-note{
+    height: 200px;
+    margin-top:20px;
+  }
+.container{
+    display: flex;
+    felx-direction: row;
+    align-items: center;
+  }	
 	</style>
 	
 	
