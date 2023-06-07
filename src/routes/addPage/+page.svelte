@@ -1,5 +1,4 @@
 
-
 <h2 style="text-align:center; font-weight:bold; margin-bottom:0px; margin-top:20px;">Add your note!</h2>
 <form method="POST">
   <div class="wrapper">
@@ -16,7 +15,7 @@
     </div>
        <label for = "content">
       Content
-      <textarea type="text" id="content" name="content" placeholder="Content" rows="4"  required></textarea>
+      <textarea  id="content" name="content" placeholder="Content" rows="4"  required></textarea>
     </label>
        <label for ="date">
       Date
