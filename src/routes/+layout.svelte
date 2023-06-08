@@ -1,5 +1,6 @@
 <script lang="ts">
   import '@picocss/pico'
+  import '@fortawesome/fontawesome-free/css/all.css';
   function goTo(){
  window.location.href = "./"
 

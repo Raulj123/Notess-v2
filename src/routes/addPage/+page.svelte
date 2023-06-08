@@ -46,6 +46,7 @@
     <button type="submit">Submit</button>
   </div>
 </form>
+<small style="display:flex; justify-content:center; margin-bottom: 10px; margin-top:0px;">Won't accept titles over 30 char and content over 200 </small>
 
 <style>
   .wrapper{

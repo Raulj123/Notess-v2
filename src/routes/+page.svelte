@@ -11,6 +11,7 @@
 	</script>
 	
 <div class="container">	
+	
 	<div id="app">
 	<button class="add-note" type="button" on:click={()=>addNote()}>+</button>
 	</div>
@@ -25,8 +26,16 @@
 	
 	  <div class="card-footer">
 		<div class="date">{note.date}</div>
-    <div class="edit">Edit</div>
-    <div class="Trash">Trash</div>
+		<a href="/{note.id}" class="Edit">
+			<i class="fa-solid fa-pencil"></i>
+		  </a>
+		  <form action="?/deleteNote&id={note.id}" method="POST">
+			<button type="submit" style=" border:none; background-color: transparent;margin: 0; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center;">
+			  <i style="color: hsl(195, 85%, 41%);" class="fas fa-trash"></i>
+			</button>
+		  </form>
+    
+
 	  </div>
 </div>
 	{/each}
@@ -34,7 +43,7 @@
 	<style>
 	.note-card{
 		width: 200px;
-		height: 200px;
+		height: 250px;
 		margin-right: 15px;
 		background-color: #fff;
 		padding: 15px;
@@ -44,31 +53,33 @@
 	}
 	  .title {
 		  font-weight: bold;
-		  margin-bottom: 10px;
+		  
     color: hsl(195, 85%, 41%);
+	overflow: hidden;
 		}
-  .preview{
-    color: grey;
-  }
+  
 	.preview {
+		overflow: hidden;
+		color: grey;
 		  font-size: 15px;
 		  word-break: break-word;
 		}
 	.tag {
- color: hsl(195, 85%, 41%);
-
+ 		color: hsl(195, 85%, 41%);
+ 		display: inline-block;
 		  background-color: #d6d2d2;
 		  padding: 2px 10px;
 		  border-radius: 20px;
 		  font-size: 12px;
 		  margin-right: 5px;
 		  height: 25px;
-		  width: 50px;
   }
 	.tag-wrapper{
 		white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    	overflow: hidden;
+    	text-overflow: ellipsis;
+		padding:0px;
+		margin:0px;
 	}
 	.card-footer {
 		  display: flex;
@@ -86,16 +97,20 @@
     	}
 
   .add-note{
-    height: 200px;
+    height: 250px;
     margin-top:20px;
     width: 200px;
   }
 .container{
     display: flex;
-    felx-direction: row;
+    flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
   }	
+  form {
+    margin:0px;
+  }
+
 	</style>
 	
 	

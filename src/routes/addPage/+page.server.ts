@@ -11,6 +11,12 @@ export const actions: Actions = {
 			content: string;
 			date: string;
 		};
+		if (title.length > 30) {
+			return fail(400, { message: 'msg too long' });
+		}
+		if (content.length > 200) {
+			return fail(400, { message: 'name too long' });
+		}
 		try {
 			await prisma.notes.create({
 				data: {
