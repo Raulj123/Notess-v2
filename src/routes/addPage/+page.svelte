@@ -9,7 +9,29 @@
     </label>
  <label for ="label">
       Label
-      <input type="text" id="label" name="label" placeholder="Label" >
+      <details role="list">
+  <summary aria-haspopup="listbox">Labels</summary>
+  <ul role="listbox">
+    <li>
+      <label>
+        <input type="radio"name="label" value="CS 💻">
+        CS 💻
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="radio" name="label" value="Math 🧮">
+        Math 🧮
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="radio" name="label"value="Productivity 🎯">
+        productivity 🎯
+      </label>
+    </li>
+  </ul>
+</details>
     </label>
 
     </div>

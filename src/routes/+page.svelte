@@ -39,32 +39,37 @@
 		background-color: #fff;
 		padding: 15px;
 		border-radius: 10px;
-		box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 		display: grid;
 		grid-template-rows: 1fr 4fr 2fr 1fr;
 	}
 	  .title {
 		  font-weight: bold;
 		  margin-bottom: 10px;
+    color: hsl(195, 85%, 41%);
 		}
+  .preview{
+    color: grey;
+  }
 	.preview {
 		  font-size: 15px;
 		  word-break: break-word;
 		}
 	.tag {
+ color: hsl(195, 85%, 41%);
+
 		  background-color: #d6d2d2;
 		  padding: 2px 10px;
 		  border-radius: 20px;
 		  font-size: 12px;
 		  margin-right: 5px;
-		  height: 15px;
-		  width: 100px;
-		  &-wrapper {
-			display: flex;
-			align-items: flex-end;
-			flex-wrap: wrap;
-		  }
-		}
+		  height: 25px;
+		  width: 50px;
+  }
+	.tag-wrapper{
+		white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	}
 	.card-footer {
 		  display: flex;
 		  justify-content: space-between;
@@ -76,21 +81,20 @@
 		  }
 	#app{
 	  
-	overflow:auto;
-	display:grid;
-	grid-template-columns: repeat(auto-fill,200px);
-	padding:20px;
-	gap:20px;
-	
-	}
+    display:flex;
+    margin:20px;
+    	}
+
   .add-note{
     height: 200px;
     margin-top:20px;
+    width: 200px;
   }
 .container{
     display: flex;
     felx-direction: row;
     align-items: center;
+    flex-wrap: wrap;
   }	
 	</style>
 	

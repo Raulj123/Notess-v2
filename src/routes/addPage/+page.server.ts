@@ -1,10 +1,11 @@
 import type { Actions } from '@sveltejs/kit';
 import { prisma } from '../../lib/server/prisma';
 import { fail } from '@sveltejs/kit';
-;
 export const actions: Actions = {
 	default: async ({ request }) => {
-		const { title, label, content, date } = Object.fromEntries(await request.formData()) as {
+		const { title, label,content, date } = Object.fromEntries(
+			await request.formData()
+		) as unknown as {
 			title: string;
 			label: string;
 			content: string;
