@@ -5,7 +5,7 @@
   $: ({note}= data)
 </script>
 <h2 style="text-align:center; font-weight:bold; margin-bottom:0px; margin-top:20px;">Editing Note  <i class="fa-solid fa-pen-to-square"></i></h2>
-<form method="POST">
+<form action="?/updateNotes" method="POST">
   <div class="wrapper">
     <div class="grid">
  <label for ="title">
