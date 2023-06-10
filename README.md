@@ -17,7 +17,7 @@ Contributions are welcome! If you have any suggestions or improvements, please o
 
 ## Before and After 
 The main difference in the "After" version is the addition of more styles to the note card. This enhances the visual appeal and user experience.
-
+Also using a diffrent framework and languages. 
 Here's an example showcasing the difference:
 <div align="center">
 <table>
