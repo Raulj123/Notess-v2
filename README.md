@@ -7,7 +7,6 @@ Notess is a full CRUD application that allows users to create, edit, delete, and
 - ✏️  Create a new note 
 - ✏️  Edit an existing note
 - ❌  Delete a note
-- 🔁  Update a note
 
 ## Inspiration 💡
 This project draws inspiration from my previous Notes project and the article ["Making a Simple Note App using Svelte and Vite"](https://medium.com/the-web-tub/making-a-simple-note-app-using-svelte-and-vite-27edfa91a591). While incorporating ideas from these sources, I have also added my own customizations to enhance the frontend.
